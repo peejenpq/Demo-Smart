@@ -1,0 +1,59 @@
+<ion-view>
+  <ion-nav-bar class="barall">
+    <ion-nav-title>
+      Smart App
+    </ion-nav-title>
+    <ion-nav-buttons side="left">
+      <button class="button w3-button w3-blue w3-round icon-left ion-ios-arrow-back" ng-click="btnBack()">Back</button>
+    </ion-nav-buttons>
+
+    <ion-nav-buttons side="right">
+      <button class="button w3-button w3-blue w3-round " ng-click="btnHis()">History</button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
+  <ion-content>
+
+      <img src="http://27.131.160.116:8080/add_image.png" style="height: auto; width: 100%" id="myImage" width="100%" height="100%">
+
+
+    <div>
+        <div class="item-input-inset">
+          <label class="textbox"><input type="text" placeholder="Fill your number room" ng-model="form.txt_room" style="width: 100%"></label>
+        </div>
+        <div class="item-input-inset">
+          <label class="textbox"><input type="text" placeholder="Fill your Title" ng-model="form.txt_title" style="width: 100%"></label>
+        </div>
+
+        <div class="item-input-inset">
+          <textarea rows="4" placeholder="Fill your Description" ng-model="form.txt_description" class="textarea">
+          </textarea>
+        </div>
+
+      <div class="item-input-inset">
+        <label class="textbox"><input type="text" placeholder="Fill your Phone" ng-model="form.txt_phone" style="width: 100%"></label>
+      </div>
+
+        <div class="item-input-inset">
+          <label class="textbox"><input placeholder="Touch here to input date" ng-model="form.txt_time" class="textbox-n" type="text" onfocus="(this.type='date')" id="date" style="width: 100%"></label>
+        </div>
+    </div>
+
+    <div class="list">
+      <div class="item item-icon-left item-icon-right btnBlack" ng-click="takePicture()">
+        <p style="color: white; text-align: center">Take Picture</p>
+        <i class="icon ion-android-camera"></i>
+        <i class="icon ion-ios-arrow-forward"></i>
+      </div>
+      <br>
+      <div class="item item-icon-left item-icon-right btnBlack" ng-click="btnSendForm('Report Successfully', 'long', 'bottom')">
+        <p style="color: white; text-align: center">Send Form</p>
+        <i class="icon ion-ios-paperplane"></i>
+        <i class="icon ion-ios-arrow-forward"></i>
+      </div>
+    </div>
+    <div></div>
+
+  </ion-content>
+
+</ion-view>

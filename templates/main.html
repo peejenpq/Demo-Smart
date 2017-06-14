@@ -1,0 +1,45 @@
+<ion-view>
+
+  <ion-nav-bar class="barall">
+    <ion-nav-title >
+       Smart App
+    </ion-nav-title>
+    <ion-nav-buttons side="left">
+      <button class="button w3-button w3-blue w3-round icon-left ion-android-arrow-dropleft-circle" ng-click="btnLogout()">Logout</button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
+  <ion-content>
+    <div class="col">
+    <img src="http://www.ananda.co.th/ci/uploads/media/img/photo/77_th.jpg" class="imgCenter">
+    </div>
+
+    <div class="list">
+      <div class="item item-icon-left item-icon-right btnBlack" ng-click="btnHome()">
+        <p style="color: white; text-align: center">Home</p>
+        <i class="icon ion-ios-home"></i>
+        <i class="icon ion-ios-arrow-forward"></i>
+      </div>
+      <br>
+      <div class="item item-icon-left item-icon-right btnBlack" ng-click="btnRequest()">
+        <p style="color: white; text-align: center">Job Request</p>
+        <i class="icon ion-ios-compose"></i>
+        <i class="icon ion-ios-arrow-forward"></i>
+      </div>
+      <br>
+      <div class="item item-icon-left item-icon-right btnBlack" ng-click="btnNews()">
+        <p style="color: white; text-align: center">News</p>
+        <i class="icon ion-clipboard"></i>
+        <i class="icon ion-ios-arrow-forward"></i>
+      </div>
+      <br>
+      <div class="item item-icon-left item-icon-right btnBlack" ng-click="btnVisitor()">
+        <p style="color: white; text-align: center">Visitor</p>
+        <i class="icon ion-ios-eye"></i>
+        <i class="icon ion-ios-arrow-forward"></i>
+      </div>
+    </div>
+
+  </ion-content>
+
+</ion-view>

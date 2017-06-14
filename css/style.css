@@ -1,0 +1,312 @@
+/* Empty. Add your own CSS if you like */
+@font-face {
+  font-family: AppFont;
+  src: url("../assets/fonts/BalsamiqSansRegular.ttf");
+}
+a{
+  text-align: center;
+}
+
+body, span, button, h1, h2, h3, h4, h5, h6, p, ion-item, ion-title {
+  font-family: 'AppFont' !important;
+}
+
+.barall{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+.headtitle{
+  font-size: 26px;
+  color: blue;
+}
+.imgCenter{
+  display: block;
+  margin: auto;
+  width: 100%;
+  border-color: red;
+  border-style: solid;
+}
+.imgHistory{
+  max-height: 20px;
+  max-width: 20px;
+}
+
+.imgVisitor{
+  display: block;
+  margin: auto;
+  width: auto;
+  max-height: 400px;
+}
+
+.imgButton{
+  display: block;
+  margin: auto;
+  width: 30%;
+  border-radius: 5px;
+}
+
+.imgPerson{
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+.imgRepair{
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+.btnlogin {
+  border-bottom: 4px solid darkslategray;
+  border-right: 4px solid darkslategray;
+  background-color: yellow;
+  width:100%;
+}
+
+.btnBlack {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  border-color: #e50065;
+  background-color: black;
+  width:100%;
+  color: white;
+}
+
+.btnBlue {
+  border-bottom: 4px solid darkslategray;
+  border-right: 4px solid darkslategray;
+  background-color: cyan;
+  width:100%;
+  color: white;
+}
+
+.textbox{
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.textarea{
+  overflow:scroll;
+  width: 100%;
+  border-color: black;
+  border-style: solid;
+  border-width: medium;
+
+}
+
+.footerlogin{
+  background-color: black;
+  color: white;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.footerchat{
+  background-color: lawngreen;
+  color: black;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.footertextchat{
+  text-align: center;
+  color: white;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+  margin: 0 10px;
+  min-width: 30px;
+  height: 43px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 500;
+  line-height: 44px;
+}
+
+.btnmain {
+  border-bottom: 4px solid darkslategray;
+  border-right: 4px solid darkslategray;
+  width:100%;
+}
+.text1 {
+  padding-top: 13px;
+  padding-right: 10px;
+}
+.footertext{
+  text-align: center;
+  color: white;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+  margin: 0 10px;
+  min-width: 30px;
+  height: 43px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 500;
+  line-height: 44px;
+}
+
+.desc{
+  padding-top: 13px;
+  padding-right: 10px;
+}
+
+.desc1{
+  border: 2px solid gray;
+  border-radius: 1px;
+  width: 100%;
+  height: 110px;
+  color: #0c60ee;
+  padding: 15px;
+}
+section.chats div {
+  max-width: 255px;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+  line-height: 24px;
+}
+section.chats p{
+  margin: 0;
+}
+section.chats p.username{
+  max-width: 255px;
+  font-weight: bold;
+}
+
+p.notification{
+  text-align: center;
+  font-style: italic;
+}
+
+.clear {
+  clear: both;
+}
+
+.from-me {
+  position: relative;
+  padding: 10px 20px;
+  color: white;
+  background: #0B93F6;
+  border-radius: 25px;
+  float: right;
+}
+.from-me:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -2px;
+  right: -7px;
+  height: 20px;
+  border-right: 20px solid #0B93F6;
+  border-bottom-left-radius: 16px 14px;
+  -webkit-transform: translate(0, -2px);
+}
+.from-me:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: -2px;
+  right: -56px;
+  width: 26px;
+  height: 20px;
+  background: white;
+  border-bottom-left-radius: 10px;
+  -webkit-transform: translate(-30px, -2px);
+}
+
+.from-them {
+  position: relative;
+  padding: 10px 20px;
+  background: #E5E5EA;
+  border-radius: 25px;
+  color: black;
+  float: left;
+}
+.from-them:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  bottom: -2px;
+  left: -7px;
+  height: 20px;
+  border-left: 20px solid #E5E5EA;
+  border-bottom-right-radius: 16px 14px;
+  -webkit-transform: translate(0, -2px);
+}
+.from-them:after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  bottom: -2px;
+  left: 4px;
+  width: 26px;
+  height: 20px;
+  background: white;
+  border-bottom-right-radius: 10px;
+  -webkit-transform: translate(-30px, -2px);
+}
+
+.username-list {
+  line-height: 38px;
+}
+
+#navlist {
+  position: relative;
+}
+
+#navlist li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+}
+
+#navlist li, #navlist a {
+  height: 44px;
+  display: block;
+}
+
+
+div.absolute {
+  position: absolute;
+  top: 75%;
+  right: 10%;
+  width: 100px;
+  height: 100px;
+  background: url("../img/x.png");
+  background-position: center;
+}
+div.absolute2 {
+  position: absolute;
+  top: 75%;
+  left: 10%;
+  width: 100px;
+  height: 100px;
+  background: url("../img/check.png");
+  background-position: center;
+}
+div.avatar {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  width: 100%;
+  height: 100%;
+  background: url("../img/person.png");
+  background-position: center;
+}

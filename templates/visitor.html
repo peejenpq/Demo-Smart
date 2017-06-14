@@ -1,0 +1,30 @@
+<ion-view>
+
+  <ion-nav-bar class="bar-calm">
+    <ion-nav-title>
+      Visitor
+    </ion-nav-title>
+
+    <ion-nav-buttons side="left">
+      <button class="button w3-button w3-blue w3-round icon-left ion-ios-arrow-back" ng-click="btnBack()">Back</button>
+    </ion-nav-buttons>
+
+  </ion-nav-bar>
+
+  <ion-content>
+
+    <img ng-show="imgURI === undefined" ng-src="http://placehold.it/300x200" class="imgVisitor">
+    <img ng-show="imgURI === undefined" ng-src="http://placehold.it/300x200" class="imgVisitor">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--<div class="avatar"></div>-->
+    <div class="absolute" ng-click="btnDenied('Denied', 'long', 'bottom')"></div>
+    <div class="absolute2" ng-click="btnAllow('The door is opening', 'long', 'bottom')"></div>
+
+  </ion-content>
+</ion-view>

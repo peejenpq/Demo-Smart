@@ -1,0 +1,46 @@
+<ion-view>
+
+  <ion-nav-bar class="barall">
+    <ion-nav-title>
+      Smart App
+    </ion-nav-title>
+
+    <ion-nav-buttons side="left">
+      <button class="button w3-button w3-blue w3-round icon-left ion-ios-arrow-back" ng-click="btnBack()">Back</button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
+
+  <!--<ion-content>-->
+
+    <!--<div class="list">-->
+      <!--<div class="item item-icon-left item-icon-right" ng-click="btnDetail(data)" ng-repeat="data in myData">-->
+        <!--<img src="../img/ionic.png" class="imgHistory">-->
+        <!--<h2>{{data.Room}}</h2>-->
+        <!--<p>{{data.Status}}</p>-->
+        <!--<p>{{data.Time}}</p>-->
+        <!--<i class="icon ion-ios-arrow-forward"></i>-->
+      <!--</div>-->
+    <!--</div>-->
+
+  <!--</ion-content>-->
+
+  <ion-content>
+
+    <div class="list">
+      <div class="item item-avatar-left item-icon-right" ng-click="btnDetail(data)" ng-repeat="data in myData">
+
+        <!--<img ng-src="{{tempimagefilepath}}">-->
+        <img ng-src="{{availableImages[currentImage].src}}"/>
+        <h2>{{data.Room}}</h2>
+        <p>{{data.Status}}</p>
+        <p>{{data.Time}}</p>
+        <!--<img ng-src= "{{tempimagefilepath}}">-->
+        <!--<i class="icon ion-ios-arrow-forward"></i>-->
+      </div>
+
+    </div>
+
+  </ion-content>
+
+</ion-view>

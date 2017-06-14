@@ -1,0 +1,50 @@
+<ion-view>
+  <ion-nav-bar class="barall">
+    <ion-nav-title>
+      Smart App
+    </ion-nav-title>
+    <ion-nav-buttons side="left">
+      <button class="button icon-left ion-ios-arrow-back" ng-click="btnBack()">Back</button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
+  <ion-content>
+
+    <div class="">
+      <!--<img src="../img/tv.jpg" class="imgRepair">-->
+      <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}" class="imgRepair">
+      <img ng-show="imgURI === undefined" ng-src="http://placehold.it/300x300" class="imgRepair">
+
+      <div class="col">
+        <div class="item-input-inset">
+          <label class="textbox"><input type="text" placeholder="Title"></label>
+        </div>
+
+        <div class="item-input-inset">
+          <label class="textbox"><input type="text" placeholder="Description"></label>
+        </div>
+
+        <div class="item-input-inset">
+          <label class="textbox"><input type="date"></label>
+        </div>
+        <br>
+      </div>
+    </div>
+
+    <div class="list">
+      <div class="item item-icon-left item-icon-right btnBlack" ng-click="takePicture()">
+        <p style="color: white; text-align: center">Take Picture</p>
+        <i class="icon ion-android-camera"></i>
+        <i class="icon ion-ios-arrow-forward"></i>
+      </div>
+      <br>
+      <div class="item item-icon-left item-icon-right btnBlack" ng-click="btnSendForm('Report Successfully', 'long', 'bottom')">
+        <p style="color: white; text-align: center">Send Form</p>
+        <i class="icon ion-ios-paperplane"></i>
+        <i class="icon ion-ios-arrow-forward"></i>
+      </div>
+    </div>
+
+  </ion-content>
+
+</ion-view>

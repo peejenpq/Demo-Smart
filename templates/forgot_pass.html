@@ -1,0 +1,35 @@
+<ion-view>
+  <ion-nav-bar class="footerlogin">
+    <ion-nav-buttons side="left">
+      <button class="button w3-button w3-blue w3-round icon-left ion-ios-arrow-back"
+              ng-click="btnBack()">Back
+      </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-nav-title class="footertext">
+    <p style="color: white; text-align: center">Forgot Password</p>
+  </ion-nav-title>
+
+  <ion-content>
+    <div>
+      <div class="col">
+        <img src="http://www.ananda.co.th/ci/uploads/media/img/photo/77_th.jpg" class="imgCenter">
+      </div>
+    </div>
+
+    User Login
+    <div class="item-input-inset">
+      <label class="textbox"><input type="text" ng-model="form.txt_user" placeholder="Touch here" style="width: 100%">
+      </label>
+    </div>
+    Email
+    <div class="item-input-inset">
+      <label class="textbox"><input type="email" ng-model="form.txt_pass" placeholder="Touch here"
+                                    style="width: 100%"> </label>
+    </div>
+    <div>
+      <button class="button ion-ios-filing btnBlack" ng-click="btnCreate(data)"> Send Password to email</button>
+    </div>
+
+  </ion-content>
+</ion-view>

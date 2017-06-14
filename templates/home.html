@@ -1,0 +1,50 @@
+<ion-view>
+
+  <ion-nav-bar class="barall">
+    <ion-nav-title>
+      Smart App
+    </ion-nav-title>
+
+    <ion-nav-buttons side="left">
+      <button class="button w3-button w3-blue w3-round icon-left ion-ios-arrow-back" ng-click="btnBack()">Back</button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+      <button class="button w3-button w3-green w3-round icon-right ion-ios-arrow-forward" ng-click="btnEdit(data)" ng-repeat="data in myData">Edit</button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
+  <ion-content ng-repeat="data in myData">
+    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjE3NDQyOTYyMV5BMl5BanBnXkFtZTcwODcyODU2Mw@@._V1_UY317_CR7,0,214,317_AL_.jpg" class="imgPerson">
+    <br>
+    <div class="text-center">{{data.fullname}}</div>
+    <br>
+    <div class="list" >
+      <div class="item item-icon-left">
+        <i class="icon ion-calendar"></i>Email : {{data.email}}</div>
+      <div class="item item-icon-left">
+        <i class="icon ion-card"></i>UserID : {{data.user_id}}</div>
+      <div class="item item-icon-left">
+        <i class="icon ion-transgender"></i>Gender : {{data.gender}}</div>
+      <div class="item item-icon-left">
+        <i class="icon ion-iphone"></i>Phone : {{data.phone}}</div>
+      <div class="item item-icon-left">
+        <i class="icon ion-iphone"></i>Address : {{data.address}}</div>
+      <div class="item item-icon-left">
+        <i class="icon ion-iphone"></i>Birth : {{data.birthdate}}</div>
+      <div class="item item-icon-left">
+        <i class="icon ion-iphone"></i>Company Email : {{data.company_email}}</div>
+      <div class="item item-icon-left">
+        <i class="icon ion-iphone"></i>CompanyName : {{data.company_name}}</div>
+      <div class="item item-icon-left">
+        <i class="icon ion-iphone"></i>Company Position : {{data.company_position}}</div>
+      <div class="item item-icon-left">
+        <i class="icon ion-iphone"></i>CompanyTel : {{data.company_tel}}</div>
+      <div class="item item-icon-left">
+        <i class="icon ion-iphone"></i>UserLogin : {{data.user_login}}</div>
+      <div class="item item-icon-left">
+        <i class="icon ion-iphone"></i>Status : {{data.user_status}}</div>
+
+    </div>
+
+  </ion-content>
+</ion-view>
